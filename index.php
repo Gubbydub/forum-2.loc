@@ -1,11 +1,21 @@
 <?php
 
-//regular expressions
-//preeg_muth, preg_replace
+//FRONT CONTROLLER
 
-$string = 'Test search pattern';
-$pattern = '/search/';
+// 1. Общие настройки
 
-$result = preg_match($pattern, $string);
+use LDAP\Result;
 
-var_dump($result);
+ini_set('display error', 1);
+error_reporting(E_ALL);
+    
+// 2. Подключение файлов системы
+define('ROOT', dirname(__FILE__));
+require_once(ROOT.'/components/Router.php');
+
+// 3. Установка соеденения с БД
+
+// 4. Вызов Router
+
+$router = new Router();
+$router->run();
