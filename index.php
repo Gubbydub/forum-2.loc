@@ -1,4 +1,4 @@
 <?php
 
-echo "test messege";
-?>
+//regular expressions
+//preeg_muth, preg_replace
