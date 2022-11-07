@@ -3,8 +3,8 @@
 //regular expressions
 //preeg_muth, preg_replace
 
-$string = 'Ученик сидит за партой.';
-$pattern = '/Ученик/';
+$string = 'Test search pattern';
+$pattern = '/search/';
 
 $result = preg_match($pattern, $string);
 
