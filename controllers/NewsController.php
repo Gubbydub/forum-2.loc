@@ -2,9 +2,9 @@
 
 class NewsController
 {
-    public function actionIndex ()
+    public function actionIndex()
     {
         echo 'NewsController - actionIndex';
-        return true; 
+        return true;
     }
 }
