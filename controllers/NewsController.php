@@ -4,7 +4,13 @@ class NewsController
 {
     public function actionIndex()
     {
-        echo 'NewsController - actionIndex';
+        echo '<br>Список новостей';
+        return true;
+    }
+    
+    public function actionView($category, $id)
+    {
+        echo 'Просмотр оной новости';
         return true;
     }
 }
